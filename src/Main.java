@@ -7,6 +7,11 @@ public class Main {
         array[0] = 1;
         array[1] = 2;
         array[2] = 3;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                array[i]++;
+            }
+        }
         System.out.println(array[0] + ", " + array[1] + ", " + array[2]);
         System.out.println(array[2] + ", " + array[1] + ", " + array[0]);
 
@@ -19,20 +24,6 @@ public class Main {
         int[] weight = {1, 2, 3, 4};
         System.out.println(weight[0] + ", " + weight[1] + ", " + weight[2] + ", " + weight[3]);
         System.out.println(weight[3] + ", " + weight[2] + ", " + weight[1] + ", " + weight[0]);
-
-
-        //4 задание
-
-        int[] array1 = new int[3];
-        array1[0] = 1;
-        array1[1] = 2;
-        array1[2] = 3;
-        for (int i = 0; i < array1.length; i++) {
-            if (i % 2 != 0) {
-                array1[i]++;
-            }
-        }
-        System.out.println(array1[0] + ", " + array1[1] + ", " + array1[2]);
 
 
     }
