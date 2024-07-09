@@ -2,14 +2,29 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        int[] array = new int[3];
+        array[0] = 1;
+        array[1] = 2;
+        array[2] = 3;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                array[i]++;
+            }
         }
+        System.out.println(array[0] + ", " + array[1] + ", " + array[2]);
+        System.out.println(array[2] + ", " + array[1] + ", " + array[0]);
+
+
+        double[] arrayDouble = {1.57, 7.654, 9.986};
+        System.out.println(arrayDouble[0] + ", " + arrayDouble[1] + ", " + arrayDouble[2]);
+        System.out.println(arrayDouble[2] + ", " + arrayDouble[1] + ", " + arrayDouble[0]);
+
+
+        int[] weight = {1, 2, 3, 4};
+        System.out.println(weight[0] + ", " + weight[1] + ", " + weight[2] + ", " + weight[3]);
+        System.out.println(weight[3] + ", " + weight[2] + ", " + weight[1] + ", " + weight[0]);
+
+
     }
 }
